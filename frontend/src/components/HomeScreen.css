@@ -1,0 +1,14 @@
+.selection {
+  background: linear-gradient(to right, #c0c0aa, #1cefff);
+}
+
+.altered {
+  opacity: 0.8;
+  transform: translateX(-100px);
+  transition: all 1000ms ease-in-out;
+}
+
+.dropdown-menu {
+  height: 400px;
+  overflow-y: scroll;
+}
