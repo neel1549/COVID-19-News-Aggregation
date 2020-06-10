@@ -1,5 +1,5 @@
 # COVID-19-News-Aggregation
-React JS website that uses multiple API calls to organize the information you need to know for your specific county in California.
+React JS website that organizes the information you need to know for your specific county in California.
 
 Information Aggregated(By County):
 1. Current COVID-19 Cases in your county since March, graphed and responsive
@@ -8,11 +8,13 @@ Information Aggregated(By County):
 4. Restaurants currently open in your county and the ability to filter with Dine-In,Take-out, and Delivery
 To run API Server:
 
+Technologies Used: React JS, Node JS, Chart JS,React-Bootstrap, Semantic UI,
+JS Puppeteer Webscraping, RSS Feeds, and various APIs and libraries for styling
+
 cd into ./src/scrapers
 and then run node server.js
 
 To run React App:
 cd into ./src and run npm start
 
-Technologies Used: React JS, Node JS, Chart JS,React-Bootstrap, Semantic UI,
-JS Puppeteer Webscraping, RSS Feeds, and various APIs and libraries for styling
+
