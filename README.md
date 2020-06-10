@@ -6,11 +6,12 @@ Information Aggregated(By County):
 2. Statistics on Projections and % Increase over time
 3. RSS News Aggregation of the top 6 stories related to COVID-19 in your specific county
 4. Restaurants currently open in your county and the ability to filter with Dine-In,Take-out, and Delivery
-To run API Server:
 
-Technologies Used: React JS, Node JS, Chart JS,React-Bootstrap, Semantic UI,
+
+Technologies Used: React JS, Node JS, Express JS, Chart JS, React-Bootstrap, Semantic UI,
 JS Puppeteer Webscraping, RSS Feeds, and various APIs and libraries for styling
 
+To run  API Server:
 cd into ./src/scrapers
 and then run node server.js
 
