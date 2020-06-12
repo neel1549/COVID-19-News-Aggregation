@@ -1,5 +1,4 @@
 import React from "react";
-import SplashScreen from "./components/SplashScreen";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./history";
 import HomeScreen from "./components/HomeScreen";
