@@ -18,7 +18,7 @@ and then run node server.js
 To run React App:
 cd into ./src and run npm start
 
-![Alt text](./screenshots/Screen Shot 2020-06-15 at 3.17.36 PM.png?raw=true "Optional Title")
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-06-15%20at%203.17.36%20PM.png)
 
 
 
