@@ -1,4 +1,4 @@
-# COVID-19-News-Aggregation
+# California COVID-19-News-Aggregation
 React JS website that organizes the information you need to know for your specific county in California.
 
 Information Aggregated(By County):
@@ -17,5 +17,8 @@ and then run node server.js
 
 To run React App:
 cd into ./src and run npm start
+
+![Alt text](./screenshots/Screen Shot 2020-06-15 at 3.17.36 PM.png?raw=true "Optional Title")
+
 
 
