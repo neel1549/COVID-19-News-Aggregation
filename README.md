@@ -18,7 +18,24 @@ and then run node server.js
 To run React App:
 cd into ./src and run npm start
 
+# General View
 ![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-06-15%20at%203.17.36%20PM.png)
+
+# Los Angeles Specific
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-06-15%20at%203.17.56%20PM.png)
+
+# LA Statistics
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-06-15%20at%203.18.05%20PM.png)
+
+# LA Related News
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-06-15%20at%203.18.23%20PM.png)
+
+# LA Open restaurants that can be filtered by take-out,delivery and dine-in
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-06-15%20at%203.19.32%20PM.png)
+
+
+
+
 
 
 
