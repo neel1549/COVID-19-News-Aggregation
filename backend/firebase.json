@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "covid19aggregation",
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "/restaurants",
+        "function": "app"
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

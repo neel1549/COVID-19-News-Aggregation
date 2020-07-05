@@ -23,7 +23,7 @@ export default class RestaurantDisplay extends React.Component {
     };
 
     axios
-      .get("http://www.localhost:4000/restaurants", {
+      .get("http://www.localhost:4001/restaurants", {
         crossDomain: true,
         params: {
           county: this.props.county,

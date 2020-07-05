@@ -1,7 +1,8 @@
 async function scrape(keyword) {
   try {
+    console.log(keyword);
     const puppeteer = require("puppeteer");
-    const browser = await puppeteer.launch({ slowMo: 5 });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 800 });
     await page.goto("https://www.google.com");
@@ -15,81 +16,33 @@ async function scrape(keyword) {
     console.log("Server Started:Webscraping");
     page.once("load", () => console.log("Page loaded!"));
 
-    await page.waitForSelector(".i0vbXd");
-    page.click(".i0vbXd");
-
-    await page.waitForNavigation();
-    page.once("load", () => console.log("Page loaded!"));
-    await page.waitFor(2000);
-
     const data = await page.evaluate(() => {
-      let restaurantNames = document.getElementsByClassName("dbg0pd");
-      restaurantNames = Array.from(restaurantNames).map((item) => {
-        return item.innerText;
-      });
+      let restaurantDescription = "";
+      if (document.getElementsByClassName("Yy0acb") !== null) {
+        restaurantDescription = document.getElementsByClassName("Yy0acb")[0]
+          .innerText;
+      }
+      console.log(restaurantDescription);
 
-      let restaurantImages = document.getElementsByClassName("b9tNq");
-      restaurantImages = Array.from(restaurantImages).map((item) => {
-        if (typeof item.firstChild !== "undefined") {
-          return item.firstChild.src;
-        }
-      });
+      let restaurantSelect = {};
+      document
+        .getElementsByClassName("REGfue")[0]
+        .childNodes.forEach((item) => {
+          const text = item.childNodes[1].textContent;
 
-      let restaurantDetails = document.getElementsByClassName(
-        "rllt__details lqhpac"
-      );
-      restaurantDetails = Array.from(restaurantDetails).map((item) => {
-        let interDetails = [];
-        for (var i = 1; i < item.children.length; i++) {
-          if (i == 4 || (i == 3 && item.children.length == 4)) {
-            let openDict = {};
-            for (
-              var j = 0;
-              j < item.children[i].children[0].children.length;
-              j++
-            ) {
-              if (j % 2 == 0) {
-                for (var k = 0; k < 2; k++) {
-                  if (
-                    item.children[i].children[0].children[j].children[0]
-                      .children[0].children[0].src ==
-                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAOVBMVEUAAAD/AADYMCTbLiT/MwDZLyXZMCXZMCTYLyTYLiTZLyXYLiPYLyXYMCXZLyTZLyTZMCTZMCTZLyTtMV/0AAAAE3RSTlMABKtUBbT//LJOrkj5+/j+r7aoVQEegwAAAKFJREFUeAHtlDUSxDAQBIUjM/3/rwepqk2b2hP3MrgH6pUP0YFi8MynrBKBL8oJDRpJpXWV2iKpQ4N+kDS2FT9KGnp3bsE8WzDPFn9g7C/wiFTmpxbUhAOLA54aP/QHPIxWmgYc44GFhIvCijPzByHYwJ4StGmasGgeBLTVMDjDahiWz7DepgOynyg/gbJvseCoIr+Z40e2pnuvcvPu1fP0BdTsCq8gHj6QAAAAAElFTkSuQmCC"
-                  ) {
-                    openDict[
-                      item.children[i].children[0].children[
-                        j
-                      ].children[1].innerText
-                    ] = false;
-                  } else {
-                    openDict[
-                      item.children[i].children[0].children[
-                        j
-                      ].children[1].innerText
-                    ] = true;
-                  }
-                }
-              }
-            }
-            interDetails.push(openDict);
+          if (item.childNodes[0].className === "FEyy9b bttvrb NMm5M") {
+            restaurantSelect[text] = false;
           } else {
-            interDetails.push(item.children[i].innerText);
+            restaurantSelect[text] = true;
           }
-        }
-        return interDetails;
-      });
+        });
 
-      return {
-        names: restaurantNames,
-        images: restaurantImages,
-        details: restaurantDetails,
-      };
+      return [restaurantDescription, restaurantSelect];
     });
-
-    console.log(data);
     return data;
   } catch (err) {
-    console.error(err);
+    return ["", {}];
   }
 }
+
 exports.scrape = scrape;
-//scrape("restaurants near Campbell")
