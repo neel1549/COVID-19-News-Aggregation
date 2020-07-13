@@ -1,0 +1,14 @@
+
+
+.hovering{
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=60); 
+}
+
+.hovering:hover{
+    
+    opacity: 1; /* css standard */
+    filter: alpha(opacity=100);
+    
+
+}

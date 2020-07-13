@@ -6,10 +6,6 @@
       {
         "source": "/restaurants",
         "function": "app"
-      },
-      {
-        "source": "/testing",
-        "function": "app"
       }
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
