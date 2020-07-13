@@ -1,6 +1,8 @@
 # California COVID-19-News-Aggregation
 React JS website that organizes the information you need to know for your specific county in California.
 
+https://covid-19-news-c3ffd.web.app/
+
 Information Aggregated(By County):
 1. Current COVID-19 Cases in your county since March, graphed and responsive
 2. Statistics on Projections and % Increase over time
