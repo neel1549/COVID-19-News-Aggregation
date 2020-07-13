@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.restcard {
+  position: relative;
+  background: #fff;
+  max-width: 240px;
+}
+.restcard .header {
+  background-size: cover;
+  min-height: 180px;
+  max-height: 300px;
+}
+.restcard .header .icon a .fa-heart-o {
+  position: absolute;
+  left: 85%;
+  bottom: 30.7%;
+  background: #17bebb;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0px 5px 30px 1px #17bebb;
+}
+.restcard .text .food {
+  color: #212129;
+  text-align: left;
+  font-weight: normal;
+  font-size: 19px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.restcard .text .fa-clock-o {
+  color: #9b9b9b;
+  margin: 0 30px;
+}
+.restcard .text .fa-users {
+  color: #9b9b9b;
+}
+.restcard .stars {
+  margin: 10px 30px;
+}
+.restcard .stars li a i {
+  color: #ffe500;
+}
+.restcard .info {
+  margin: 10px 30px;
+}
+.restcard a.btn {
+  display: block;
+  background: #ef3e36;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  transition: 250ms;
+}
+.restcard a.btn:hover {
+  background: #17bebb;
+  transition: 250ms;
+}
