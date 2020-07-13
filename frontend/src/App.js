@@ -1,7 +1,7 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./history";
-import HomeScreen from "./components/HomeScreen";
+import HomeScreen from "./components/HomeScreen/HomeScreen";
 
 const App = function (props) {
   return (
