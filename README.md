@@ -12,7 +12,8 @@ Information Aggregated(By County):
 
 # Technologies Used:
 
-FE:React JS, Chart JS, React-Bootstrap, Semantic UI,
+FE:React JS, Chart JS, React-Bootstrap, Semantic UI
+
 BE: Node JS, Express JS, Firebase Hosting/Cloud Functions,Google Cloud APIs
 
 
