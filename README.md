@@ -27,6 +27,19 @@ BE: Node JS, Express JS, Firebase Hosting/Cloud Functions,Google Cloud APIs
 # LA Statistics
 ![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-07-13%20at%202.56.13%20PM.png)
 
+# LA News
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-07-15%20at%208.49.12%20PM.png)
+
+# LA Restaurants 
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-07-15%20at%208.51.02%20PM.png)
+
+# Governor Gavin Newsom Livestreams
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-07-15%20at%208.51.52%20PM.png)
+
+# California Testing Sites
+![header image](https://github.com/neel1549/COVID-19-News-Aggregation/blob/master/frontend/screenshots/Screen%20Shot%202020-07-15%20at%208.53.13%20PM.png)
+
+
 
 
 
